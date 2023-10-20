@@ -5,13 +5,17 @@ import donut from './assets/fotos-postres/donut.png'
 import flan from './assets/fotos-postres/flan.png'
 import brownie from './assets/fotos-postres/brownie.png'
 import pannaCotta from './assets/fotos-postres/panna-cotta.png'
+import logo from './assets/sweet-friends-logo.svg'
+import cake from './assets/piece-of-cake.png'
+import lamOne from './assets/fotos-lam/foto-lam.jpeg'
+import lamTwo from './assets/fotos-lam/foto-lam-2.jpeg'
 
 function App() {
     return (
         <>
             <nav>
                 <div>
-                    <img src="src\assets\fotos-postres\cookie.png" alt="" />
+                    <img src={cookie} alt="" />
                 </div>
                 <ul>
                     <li>
@@ -31,19 +35,11 @@ function App() {
             <header>
                 <div className="header-content" id="home">
                     <div>
-                        <img
-                            src="src/assets/sweet-friends-logo.svg"
-                            alt=""
-                            className="header-logo"
-                        />
+                        <img src={logo} alt="" className="header-logo" />
                         <p>Descubrí el sabor de la ternura</p>
                         <button>Explorar</button>
                     </div>
-                    <img
-                        className="cake-img"
-                        src="src\assets\piece-of-cake.png"
-                        alt=""
-                    />
+                    <img className="cake-img" src={cake} alt="" />
                 </div>
             </header>
             <section className="section-productos" id="productos">
@@ -78,7 +74,7 @@ function App() {
             </section>
             <section className="about" id="about">
                 <div className="sobre-nosotros">
-                    <img src="src\assets\fotos-lam\foto-lam.jpeg" alt="" />
+                    <img src={lamOne} alt="" />
                     <div>
                         <h2>Sobre nosotros</h2>
                         <p>
@@ -106,7 +102,7 @@ function App() {
                             nuestra amistad.
                         </p>
                     </div>
-                    <img src="src\assets\fotos-lam\foto-lam-2.jpeg" alt="" />
+                    <img src={lamTwo} alt="" />
                 </div>
             </section>
 
