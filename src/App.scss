@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700&display=swap');
+$base-color: #FFF8F7;
+$base-color-2: #F9DCC4;
+$brown: #790000;
+$pink: #FD8087;
+
+*{
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1{
+    font-family: 'Merienda', cursive;
+    color: $brown;
+}
+
+body{
+    background-color: $base-color;
+    font-family: 'Nunito Sans', sans-serif;
+    color: $brown;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+header{
+    height: 100vh;
+    background-color: $base-color;
+    background-image: url("src/assets/waves/wave-1.svg");
+    background-repeat: no-repeat;
+    background-position: bottom -200px right;
+    background-size: cover;
+
+    p{
+        font-weight: 700;
+        font-size: 24px;
+        margin:  1.5rem 0;
+    }
+
+}
+
+nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+        height: 5rem;
+        position: sticky;
+        top: 0;
+        background-color: $base-color;
+    
+        img{
+            height: 3rem;
+        }
+    
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        li{
+            transition: .25s ease-in-out;
+
+
+            &:hover{
+                text-decoration: underline;
+                transform: scale(1.1);
+            }
+
+        }
+
+        a{
+            text-decoration: none;
+            color: $brown;
+            font-weight: 600;
+            transition: .25s ease-in-out;
+
+
+            &:hover{
+                text-decoration: underline;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+
+    .header-logo{
+        width: 25vw;
+    }
+
+    .cake-img{
+        height: 35vw;
+    }
+
+    button{
+        background-color: $base-color-2;
+        // border: 3px solid $pink;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        color: $brown;
+        cursor: pointer;
+        transition: .25s ease-in-out;
+
+        &:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+}
+
+.section-productos{
+    background-color: $base-color-2;
+    background-image: url("src/assets/waves/wave-2.svg");
+    background-repeat: no-repeat;
+    background-position: bottom -350px left -100px;
+    background-size: cover;
+    text-align: center;
+
+    h2{
+        font-size: 40px;
+    }
+
+    h3{
+        font-family: 'Merienda', cursive;
+        font-weight: 700;
+    }
+
+    p{
+        font-weight: 700;
+        padding: 1rem 0 3rem;
+    }
+
+}
+
+.galeria-productos{
+    display: grid;
+    max-width: 70vw;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin-bottom: 100px;
+
+    img{
+        width: 10rem;
+    }
+    
+    div{
+        border-radius: 1rem;
+        background-color: rgba(255, 255, 255, 0.795);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        aspect-ratio: 1;
+        transition: .25s ease-in-out;
+
+
+        &:hover{
+            transform: scale(1.15);
+            cursor: pointer;
+        }
+    }
+}
+
+.about{
+    max-width: 70vw;
+    margin: auto;
+    > div{
+        display: flex;
+        gap: 2rem;
+        img{
+            width: 30rem;
+        }
+
+        margin-bottom: 100px;
+    }
+    h2{
+        font-size: 42px;
+    }
+
+    p{
+        max-width: 30vw;
+        font-size: 20px;
+    }
+}
+
+.amigos{
+    justify-content: end;
+}
+
+#footer{
+    background-color: #F7DAD7;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 7rem;
+    font-size: 20px;
+
+    h3{
+        font-size: 36px;
+    }
+}
