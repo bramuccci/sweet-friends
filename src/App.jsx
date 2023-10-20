@@ -1,4 +1,10 @@
 import './App.scss'
+import cookie from './assets/fotos-postres/cookie.png'
+import cupcake from './assets/fotos-postres/cupcake.png'
+import donut from './assets/fotos-postres/donut.png'
+import flan from './assets/fotos-postres/flan.png'
+import brownie from './assets/fotos-postres/brownie.png'
+import pannaCotta from './assets/fotos-postres/panna-cotta.png'
 
 function App() {
     return (
@@ -45,36 +51,27 @@ function App() {
                 <p>Conocé lo que nuestra pastelería tiene para ofrecer.</p>
                 <div className="galeria-productos">
                     <div>
-                        <img
-                            src="src\assets\fotos-postres\brownie.png"
-                            alt=""
-                        />
+                        <img src={brownie} alt="" />
                         <h3 className="nombre">Brownies</h3>
                     </div>
                     <div>
-                        <img src="src\assets\fotos-postres\cookie.png" alt="" />
+                        <img src={cookie} alt="" />
                         <h3 className="nombre">Choco cookies</h3>
                     </div>
                     <div>
-                        <img src="src\assets\fotos-postres\donut.png" alt="" />
+                        <img src={donut} alt="" />
                         <h3 className="nombre">Donuts</h3>
                     </div>
                     <div>
-                        <img src="src\assets\fotos-postres\flan.png" alt="" />
+                        <img src={flan} alt="" />
                         <h3 className="nombre">Postres</h3>
                     </div>
                     <div>
-                        <img
-                            src="src\assets\fotos-postres\cupcake.png"
-                            alt=""
-                        />
+                        <img src={cupcake} alt="" />
                         <h3 className="nombre">Cupcakes</h3>
                     </div>
                     <div>
-                        <img
-                            src="src\assets\fotos-postres\panna-cotta.png"
-                            alt=""
-                        />
+                        <img src={pannaCotta} alt="" />
                         <h3 className="nombre">Frutillas con crema</h3>
                     </div>
                 </div>
