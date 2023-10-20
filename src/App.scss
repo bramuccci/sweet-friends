@@ -33,7 +33,7 @@ html{
 header{
     height: 100vh;
     background-color: $base-color;
-    background-image: url("src/assets/waves/wave-1.svg");
+    background-image: url("/wave-1.svg");
     background-repeat: no-repeat;
     background-position: bottom -200px right;
     background-size: cover;
@@ -127,7 +127,7 @@ nav{
 
 .section-productos{
     background-color: $base-color-2;
-    background-image: url("src/assets/waves/wave-2.svg");
+    background-image: url("/wave-2.svg");
     background-repeat: no-repeat;
     background-position: bottom -350px left -100px;
     background-size: cover;
